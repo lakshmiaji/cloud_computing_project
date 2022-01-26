@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  display: flex;
+  column-gap: 20px;
+  max-width: 600px;
+  justify-content: space-between;
+}
+
+form label{
+  font-weight:bold;
+}
+
+div{
+  font-size: 105%;
+}
+
+input[type=text] {
+  width: 80%;
+}
+</style>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="/search">Search</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container">
+            <h1>Welcome</h1>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="https://newschool.imgix.net/Media/Resources/Content/Portal/Students/TNS_Website-20170831_BlockParty_012.jpg?w=1000&h=1000&fit=crop" alt="" style="width:100%" height="700" > 
+            </div>
+            <div class="column">
+                <h1>Student Registration Form</h1>
+                <form action="/form" method="post">
+                    <div class="container">
+                        <div class="form-group">
+                            <label for="first_name">First Name :</label>
+                            <input type="text" class="form-control" name="first_name" id="first_name" required />
+                          </div>
+                          <div class="form-group">
+                            <label for="last_name">Last Name :</label>
+                            <input type="text" class="form-control" name="last_name" id="last_name" required />
+                          </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="container">
+                        <div class="form-group">
+                            <label for="college">College :</label>
+                            <input type="text" class="form-control" name="college" id="college" required />
+                          </div>
+                          <div class="form-group">
+                            <label for="course">Course :</label>
+                            <input type="text" class="form-control" name="course" id="course" required />
+                          </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="mail">
+                        <label for="email">Email address :</label>
+                        <input type="email" class="form-control" name="email" id="email" required />
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-radio">
+                        <label class="radio-label">Gender :</label>
+                        <div class="form-radio-item">
+                            <input type="radio" name="gender" id="male" checked>
+                            <label for="male">Male</label>
+                            <span class="check"></span>
+                        </div>
+                        <div class="form-radio-item">
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label>
+                            <span class="check"></span>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+<!--                    <div class="dob">-->
+<!--                        <label for="dob">DOB :</label>-->
+<!--                        <input type="text" class="form-control" name="dob" id="dob" required />-->
+<!--                    </div>-->
+                    <br>
+                    <br>
+                    <div class="state">
+                        <label for="state">State :</label>
+                        <input type="text" class="form-control"  name="state" id="state" required />
+                    </div>
+                    <br>
+                    <br>
+                    <div class="city">
+                        <label for="email">City :</label>
+                        <input type="text" class="form-control" name="city" id="city" required />
+                    </div>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <br>
+                    <br>
+                    <br>
+
+
+                  </form>
+            </div>
+        </div>
+
+</body>
+</html>

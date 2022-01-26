@@ -1,0 +1,4 @@
+mysql_host: 'localhost'
+mysql_user: 'josmi'
+mysql_password: 'jesus'
+mysql_db: 'student_registration'
